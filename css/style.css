@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: rgb(190, 216, 217);
+    /* background-color: rgb(225, 238, 239 ); */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* screen large -> */
+.navbar{
+	padding: 10px 0;
+	color: rgb(0, 45, 49 );
+    display: flex;
+    justify-content: space-between;
+	/* background-color: rgb(255,255,255, 0.1); */
+}
+.navbar .logo{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar .logo .ic-close{
+	display: none;
+}
+.navbar .logo .nav-logo{
+	width: 230px;
+}
+.navbar .nav-item{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 70%;
+}
+.navbar .nav-item li{
+	font-size: 1em;
+	padding: 10px 20px;
+	letter-spacing: 1px;
+}
+.navbar .nav-item li:hover{
+	background-color: rgb(176, 203, 205);
+	cursor: pointer;
+	border-radius: 5px;
+}
+.header{
+	display: flex;
+	padding: 0 20px;
+	color: rgb(7, 60, 65);
+	/* color: rgb(0, 45, 49 ); */
+}
+.header .title-welcome{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 20px;
+	padding-top: 200px;
+}
+.header .title-welcome h1{
+	font-size: 70px;
+	font-weight: bold;
+}
+.header .title-welcome h3{
+	font-weight: bold;
+	font-size: 70px;
+}
+.header .title-welcome h6{
+	margin-top: 20px;
+	font-size: 25px;
+}
+.header .title-welcome p{
+	margin-top: 5px;
+	font: 20px;
+}
+.header .animate{
+	width: 50%;
+	width: 800px;
+}
+/* end screen large */
+
+
+
+@media only screen and (max-width: 1100px) {
+	body {
+		/* background-color: lightgreen; */
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		/* background-color: lightblue; */
+	}
+	.navbar{
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		padding: 10px 10px;
+		justify-content: start;
+	}
+	.navbar .logo{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+	.navbar .logo .ic-close{
+		display: block;
+		width: 20px;
+		/* padding-right: 30px */
+	}
+	.navbar .logo .ic-close:hover{
+		cursor: pointer;
+	}
+	.navbar .logo .site-logo{
+		/* display: none; */
+	}
+	
+	.navbar .nav-item{
+		display: flex;
+		margin-top: 30px;
+		flex-direction: column;
+		width: auto;
+		padding: 10px 10px;
+		gap: 40px;
+	}
+	.navbar .nav-item li{
+		width: 80%;
+		text-align: center;
+	}
+	.navbar .nav-item li:hover{
+		background-color: rgb(15, 72, 77);
+		color: white;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+	.header{
+		display: none;
+	}
+}
